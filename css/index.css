@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    max-width: 980px;
+    margin: auto;
+    font: 100% "Segoe UI light", Arial, sans-serif;
+    color: #524743;
+    color: white
+}
+header {
+background-image: url(../limg/hedearkuhnya.JPG);
+background-size: cover;
+background-position: center;
+min-height: 400px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: fixed;
+display: flex;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 4px;
+    border: 1px solid transparent;    
+    position: relative;
+}
+
+.header-menu li a:hover {
+  color: #495675;
+}
+
+.logo-icon {
+
+    display: flex;
+    max-width: 20%;
+    max-height: 20%;
+    }
+
+}
+@media (min-width: 650px) {
+
+    header nav {
+    display: flex;
+    align-items: center;
+    }
+
+    .logo-icon {
+    display: block;
+    max-width: 10%;
+    max-height: 10%;
+    }
+    
+    .header-menu {
+        flex: 1;
+    }
+
+}
+
+h1 {
+  font: 100% "Segoe UI light", Arial, sans-serif;
+  font-size: 44px;
+  margin: 0  0 20px 20px;
+  text-decoration: none;
+}
+
+h2 {
+  font: 100% "Segoe UI light", Arial, sans-serif;
+  color: #524743;
+  font-size: 25px;
+  margin: 25px 0 0 0; }
+.h2 {
+  font: 100% "Segoe UI light", Arial, sans-serif;
+  color: #605d5c;
+  font-size: 25px;
+   margin: 20px 0;}  
+
+h3 {
+  font: 100% "Segoe UI light", Arial, sans-serif;
+  color: #605d5c;
+  font-size: 20px;
+  margin: 25px 0 0 0; }
+
+p {
+  margin: 40px 20px; 
+  font-size: 20px;
+  }
+/* Controls */
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 40px 20px;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}

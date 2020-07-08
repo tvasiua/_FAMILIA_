@@ -1,0 +1,70 @@
+.loadwrapp {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  background: white;
+  opacity: 1;
+  visibility: visible;
+}
+.loadwrapp:last-child {
+  margin-right: 0;
+}
+.spinner {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.bubble-1,
+.bubble-2 {
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #4263AA;
+}
+
+.bubble-2 {
+  top: auto;
+  bottom: 0;
+}
+
+.load .spinner {
+  animation: loadingI 1.5s linear infinite;
+}
+
+.load .bubble-1,
+.load .bubble-2 {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.load .bubble-2 {
+  animation-delay: -1s;
+}
+&.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes loadingI {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
